@@ -4753,8 +4753,6 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
 }
 
 .card > hr {
@@ -4836,6 +4834,10 @@ input[type="button"].btn-block {
   margin-left: -0.625rem;
 }
 
+.main-img {
+	display: inline;
+}
+
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -4867,6 +4869,12 @@ input[type="button"].btn-block {
 
 .card-deck .card {
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+	.main-img{
+		display: none !important;
+	}
 }
 
 @media (min-width: 576px) {
@@ -5854,6 +5862,10 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
   opacity: .75;
+}
+
+.button-padding{
+	padding-top: 20px;
 }
 
 button.close {
