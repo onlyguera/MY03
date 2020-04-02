@@ -40,6 +40,7 @@
 		  
 		  <div class="card1 bg-transparent mb-3 row no-gutters" style="max-width: 90rem; max-height: 100rem;">
 			  <div class="float-right">
+				  <button type="button" class="btn btn-howitworks bg-my03-orange float-right" id="fadeout">Fade Out Button</button>
 			  <button onClick="hidemy03()" type="button" class="btn btn-howitworks bg-my03-orange float-right">How it works</button>
 				  <button onClick="hidehowitworks()" type="button" class="btn btn-howitworks bg-my03-orange float-right">My03</button>
 			  </div>
@@ -155,6 +156,13 @@
 	<script src="js/popper.min.js"></script> 
 	<script src="js/bootstrap-4.4.1.js"></script>
 	<script>
+		
+		$(document).ready(function(){
+  $("fadeout").click(function(){
+    $("#my03div").fadeOut();
+  });
+});
+		
 	function hidemy03() {
   var my03 = document.getElementById("my03div"); 
     my03.style.display = "none";
@@ -170,6 +178,7 @@
 		var my03 = document.getElementById("my03div");
 			my03.style.display = "block";
 		}
+		
 </script>
   </body>
 </html>
