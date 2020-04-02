@@ -10,47 +10,42 @@
 	
 	<!-- Navigation -->
 	  
-	  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-my03-orange">
-		  <div class="nav-icon-padding">
-		  <img src="Images/MY03 Logo.png" class="..." height="100" width="100" alt="">
-			  </div>
-   <a class="navbar-brand" href="#">Navbar</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-   <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-         </li>
-         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="#">Action</a>
-               <a class="dropdown-item" href="#">Another action</a>
-               <div class="dropdown-divider"></div>
-               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-         </li>
-      </ul>
-   </div>
+	  <nav class="navbar navbar-expand-sm navbar-dark bg-my03-orange main-nav shadow">
+    <div class="container justify-content-center" style="padding-left: 45px; padding-right: 45px;">
+        <ul class="nav navbar-nav flex-fill w-100 flex-nowrap">
+			<a href="index.html"><img src="Images/MY03 Logo.png" class="..." height="100" width="100" alt=""></a>
+            <li class="nav-item active" style="display: none">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+        </ul>
+      
+        <ul class="nav navbar-nav flex-fill w-100 justify-content-end">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">THIS IS MY03</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 	  
   </head>
-  <body>
+  <body style="background-color: #E4E4E4">
   	<!-- body code goes here -->
-<section class="h-100">
+<section class="h-100" style="padding-bottom: 100px;">
   <header class="container h-100">
-    <div class="d-flex align-items-center justify-content-center h-100">
+    <div class="d-flex align-items-center justify-content-center">
       <div class="d-flex flex-column">
 		  
-		  <div class="card bg-light mb-3 shadow-lg" style="max-width: 90rem; max-height: 100rem;">
-  <div class="card-body">
+		  <div class="card1 bg-transparent mb-3 row no-gutters" style="max-width: 90rem; max-height: 100rem;">
+			  <div class="float-right">
+			  <button onClick="hidemy03()" type="button" class="btn btn-howitworks bg-my03-orange float-right">How it works</button>
+				  <button onClick="hidehowitworks()" type="button" class="btn btn-howitworks bg-my03-orange float-right">My03</button>
+			  </div>
+			   
+			  <div id="my03div">
+  <div class="card-body shadow-lg">
 	 <div class="card">
             <div class="row no-gutters">
 				<div class="main-img">
@@ -86,10 +81,9 @@
                   <label class="form-check-label" for="exampleCheck1">I'm happy to recieve promotional emails etc.</label>
                </div>
   				<div class="button-padding">
-                <button type="submit" class="btn btn-primary bg-my03-orange">Generate my 03 number</button>
+                <button type="button" class="btn btn-primary bg-my03-orange">Generate my 03 number</button>
       			</div>
 					</form>	
-  
 </div>
                     
                 </div>
@@ -98,7 +92,32 @@
     
 </div>
 </div>
-		  
+			  </div>
+			  <div id="howitworksdiv" style="display: none">
+			  <div class="card-body shadow-lg">
+	 <div class="card">
+            <div class="row no-gutters">
+				<div class="main-img">
+    <img class="img-fluid float-left" src="Images/man-holding-black-smartphone-1220757.jpg"  alt="image">
+					</div>
+      
+              
+                        <div class="container" style="max-width: 45rem;">
+							<div class="form-titles">
+		  <h5 class="card-title">How It Works</h5>
+    		  <h5 class="card-text">Use one of our free 03 numbers to stay confidential and professional.</h5>
+								</div>
+  
+
+</div>
+                    
+                </div>
+	  
+	  
+    
+</div>
+</div>
+			  </div>
       </div>
 		</div>
 		  </div>
@@ -107,11 +126,50 @@
 			  
 			  </header>
 </section>
+	  
+	  
+	  
+	  <!-- The fixed navbar will overlay your other content, unless you add padding to the bottom of the <body>. Tip: By default, the navbar is 50px high.  -->
+ <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-my03-orange main-nav shadow">
+    <div class="container justify-content-center" style="padding-left: 45px; padding-right: 45px;">
+        <ul class="nav navbar-nav flex-fill w-100 flex-nowrap">
+            <li class="nav-item active" style="display: none">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+        </ul>
+      
+        <ul class="nav navbar-nav flex-fill w-100 justify-content-end">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-3.4.1.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/popper.min.js"></script> 
 	<script src="js/bootstrap-4.4.1.js"></script>
+	<script>
+	function hidemy03() {
+  var my03 = document.getElementById("my03div"); 
+    my03.style.display = "none";
+  
+		var howitworks = document.getElementById("howitworksdiv");
+			howitworks.style.display = "block";
+		}
+		
+		function hidehowitworks() {
+ var howitworks = document.getElementById("howitworksdiv"); 
+    howitworks.style.display = "none";
+  
+		var my03 = document.getElementById("my03div");
+			my03.style.display = "block";
+		}
+</script>
   </body>
 </html>

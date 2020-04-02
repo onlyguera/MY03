@@ -1088,6 +1088,14 @@ pre code {
   }
 }
 
+.my03div {
+	display: block;
+}
+
+.howitworksdiv {
+	display: none;
+}
+
 @media (min-width: 768px) {
   .col-md {
     -ms-flex-preferred-size: 0;
@@ -2568,6 +2576,13 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn-howitworks {
+	max-width: 150px;
+	color: #fff;
+	display: inline-block;
+	margin-right: 5px;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #007bff;
@@ -2576,7 +2591,6 @@ fieldset:disabled a.btn {
 .btn-primary:hover {
   color: #fff;
   background-color: #F1BA57;
-	border-color: #007bff;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -4365,8 +4379,10 @@ input[type="button"].btn-block {
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
+	font-weight: 600;
   line-height: inherit;
   white-space: nowrap;
+	font: "Effra Std Rg" ;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -4743,7 +4759,23 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
+.hidingdiv{
+	display: block;
+}
+
 .card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+}
+
+.card1 {
   position: relative;
   display: -ms-flexbox;
   display: flex;
