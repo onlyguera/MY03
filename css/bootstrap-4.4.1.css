@@ -542,10 +542,10 @@ pre code {
 }
 
 .form-titles {
-	padding-top: 75px;
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-bottom: 15px;
+	padding-top: 15%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 5%;
 }
 
 .container {
@@ -2191,8 +2191,7 @@ textarea.form-control {
 }
 
 .form-padding {
-	padding-top: 30px;
-	padding-left: 100px;
+	padding-left: 10%;
 }
 
 .form-group {
@@ -5897,7 +5896,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .button-padding{
-	padding-top: 20px;
+	padding-top: 3%;
+	padding-bottom: 10%;
 }
 
 button.close {
