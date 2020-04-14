@@ -41,6 +41,9 @@
   box-sizing: border-box;
 }
 
+/* Daniel's Classes */
+
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -60,7 +63,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #E4E4E4;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -153,13 +156,14 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #ECA118;
   text-decoration: none;
   background-color: transparent;
+	font-weight: bold;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #ECA118;
   text-decoration: underline;
 }
 
@@ -415,6 +419,59 @@ h6, .h6 {
   line-height: 1.2;
 }
 
+/* --------------- Daniel's Classes ---------------- */
+
+.navlogo {
+	height: 100px;
+	width: 100px;
+}
+
+.bg-my03-orange {
+	background-color: #eca118 !important
+}
+
+.bg-my03-orange-grad {
+	background-image: linear-gradient(to bottom right, #eca118 80%, #ff9d11)!important
+}
+
+.btn-howitworks {
+	max-width: 150px;
+	color: #fff !important;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.btn-generate {
+	max-width: 250px;
+	color: #fff !important;
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 1.2rem !important;
+}
+
+.main-img {
+	display: inline;
+	max-width: 30%;
+	float: left;	
+}
+
+.button-padding{
+	padding-top: 1%;
+	padding-bottom: 6%;
+}
+
+.form-titles {
+	padding-top: 7%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 2%;
+}
+
+.form-padding {
+	padding-left: 10%;
+}
+
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -473,8 +530,7 @@ mark,
 }
 
 .img-fluid {
-  max-width: 20rem;
-  height: 40rem;
+  max-width: 100%;
 }
 
 .img-thumbnail {
@@ -541,19 +597,16 @@ pre code {
   overflow-y: scroll;
 }
 
-.form-titles {
-	padding-top: 15%;
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-bottom: 5%;
-}
-
 .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.container-card {
+  width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -1090,10 +1143,14 @@ pre code {
 
 .my03div {
 	display: block;
+	float: right;
+	max-width: 70%;
 }
 
 .howitworksdiv {
 	display: none;
+	float: right;
+	max-width: 70%;
 }
 
 @media (min-width: 768px) {
@@ -2190,12 +2247,14 @@ textarea.form-control {
   height: auto;
 }
 
-.form-padding {
-	padding-left: 10%;
-}
-
 .form-group {
   margin-bottom: 1rem;
+	max-width: 40%;
+}
+
+.form-group2 {
+  margin-bottom: 1rem;
+	max-width: 80%;
 }
 
 .form-text {
@@ -2575,12 +2634,6 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-.btn-howitworks {
-	max-width: 150px;
-	color: #fff;
-	display: inline-block;
-	margin-right: 5px;
-}
 
 .btn-primary {
   color: #fff;
@@ -4384,6 +4437,19 @@ input[type="button"].btn-block {
 	font: "Effra Std Rg" ;
 }
 
+.navbar-footer-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+	font-weight: 600;
+  line-height: inherit;
+  white-space: nowrap;
+	font: "Effra Std Rg" ;
+ color: #fff;
+}
+
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
@@ -4710,10 +4776,6 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
-.bg-my03-orange {
-	background-color: #eca118
-}
-
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
 }
@@ -4865,10 +4927,6 @@ input[type="button"].btn-block {
   margin-left: -0.625rem;
 }
 
-.main-img {
-	display: inline;
-}
-
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -4905,6 +4963,9 @@ input[type="button"].btn-block {
 @media screen and (max-width: 1300px) {
 	.main-img{
 		display: none !important;
+	}
+	.my03div{
+		max-width: 100%;
 	}
 }
 
@@ -5876,6 +5937,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   border-color: #1b1e21;
 }
 
+.pointer {
+	cursor: pointer;
+}
+
 .close {
   float: right;
   font-size: 1.5rem;
@@ -5893,11 +5958,6 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
   opacity: .75;
-}
-
-.button-padding{
-	padding-top: 3%;
-	padding-bottom: 10%;
 }
 
 button.close {
@@ -8121,6 +8181,7 @@ button.bg-dark:focus {
 .h-100 {
   height: 100% !important;
 	padding-top: 50px;
+	padding-bottom: 100px;
 }
 
 .h-auto {
